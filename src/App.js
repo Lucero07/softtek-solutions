@@ -6,11 +6,13 @@ import {Link, Route} from 'react-router-dom';
 import Home from './contenedores/Home.jsx';
 import About from './contenedores/About.jsx';
 import Vista from './contenedores/Vista.jsx';
+import Nav from './contenedores/Navegador.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className=''>
+          <Nav/>
         <div>
           <div>
             <ul>
