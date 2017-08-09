@@ -5,6 +5,10 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+<<<<<<< HEAD
+=======
+    "react-router": "^4.1.2",
+>>>>>>> 633da2fbc977b1111ffcdc9c82f89bc91f4dd1f6
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11"
   },
@@ -13,5 +17,22 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+<<<<<<< HEAD
   }
+=======
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelicaMVG/softtek-solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelicaMVG/softtek-solutions/issues"
+  },
+  "homepage": "https://github.com/AngelicaMVG/softtek-solutions#readme"
+>>>>>>> 633da2fbc977b1111ffcdc9c82f89bc91f4dd1f6
 }
