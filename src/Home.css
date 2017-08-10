@@ -13,5 +13,17 @@
   background-color: #C6D32E;
 }
 .padding-label {
-  padding: 3%;
+  padding: 5%;
+}
+
+.img-logo {
+  width: 28%;
+}
+
+.nav--height {
+  height: 80px;
+}
+
+.border {
+  border-bottom: 2px solid black;
 }
