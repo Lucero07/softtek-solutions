@@ -37,9 +37,10 @@ export default class CardPublicacion extends React.Component{
                     </Col>
                     <Col m={12}>
                         <div className="margenTop">
-                            <Tag>tag</Tag>
-                            <Tag>tag</Tag>
-                            <Tag>tag</Tag>
+                            <Chip>tag</Chip>
+                            <Chip>tag</Chip>
+                            <Chip>tag</Chip>
+                            <Chip>tag</Chip>
                         </div>
                     </Col>
                 </Row>
