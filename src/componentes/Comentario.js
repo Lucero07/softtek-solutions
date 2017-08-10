@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Card,CardTitle} from 'react-materialize';
 
 export default class Comentarios extends Component {
 	constructor(props){

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Chip, Card, Icon, Row, Col, Input } from 'react-materialize';
+import { Button,Input } from 'react-materialize';
 import '../TarjetaPublicacion.css';
 
 export default class FormularioReto extends React.Component{
@@ -12,7 +12,7 @@ export default class FormularioReto extends React.Component{
                     Crear Reto
                 </Button>
             </div>
-            
+
         )
     }
 }
