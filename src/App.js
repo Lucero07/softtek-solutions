@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './index.css';
 import './App.css';
 import {Link, Route} from 'react-router-dom';
 import About from './contenedores/About.jsx';
@@ -11,6 +11,7 @@ import Detalle from './contenedores/Detalle.js';
 
 
 
+
 class App extends Component {
   render() {
     return (
@@ -19,8 +20,9 @@ class App extends Component {
           <Nav/>
 
             <ul>
+          
                 <li>
-                <Link to="/Login">Login</Link>
+                <Link to="/">Login</Link>
                 </li>
                 <li>
                 <Link to="/about">About</Link>
@@ -42,7 +44,7 @@ class App extends Component {
 
 
 
-            <Route path="/Login" component={Login}/>
+            <Route exact path="/" component={Login}/>
             <Route path="/about" component={About}/>
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
