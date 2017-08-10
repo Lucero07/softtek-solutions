@@ -1,22 +1,15 @@
 import React, {Component} from 'react';
-import {Card,CardTitle} from 'react-materialize';
+import {Card,Col} from 'react-materialize';
 
-export default class Comentarios extends Component {
-	constructor(props){
-  		super(props);
-  	}
-  	render(){
-  		const name = this.props.name;
-  		const status = this.props.status;
-  		return(
-  			<div>
-  			{/*Crea elementos por cada todo*/}
-  				{
-  					(status === 'done')?
-  					<input type='checkbox' checked disabled/> :
-  					<input type='checkbox'/>}
-  				<label>{name}</label>
-  			</div>
-  		)
-  	}
-  }
+export default class Comentario extends Component{
+	render (){
+		const name =this.props.name;
+		return (
+			<Col m={6} s={12}>
+				<Card className='blue-grey darken-1' textClassName='white-text' title='Card title' actions={[<a href='#'>{name}</a>]}>
+				{name}
+				</Card>
+		</Col>
+		)
+	}
+}
