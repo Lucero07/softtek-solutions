@@ -15,9 +15,9 @@ import Detalle from './contenedores/Detalle.js';
 
 class App extends Component {
   render() {
-    return ( 
+    return (
         <div className=''>
-          <Nav>
+          <Nav/>
             <ul>
                 <li>
                 <Link to="/Login">Login</Link>

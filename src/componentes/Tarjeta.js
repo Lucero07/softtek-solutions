@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Card,CardTitle} from 'react-materialize';
 
-export default class Detalle extends Component {
+export default class Tarjeta extends Component {
   render() {
     return (
 		<Card className='small'
