@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Row,Col} from 'react-materialize'
 import Tarjeta from '../componentes/Tarjeta.js';
-import ContenedorComentarios from './PublicarComentario';
+import Publicaciones from './PublicarComentario';
 
 export default class Detalle extends Component {
   render() {
@@ -9,10 +9,10 @@ export default class Detalle extends Component {
 		<Row>
 			<Col s={1}/>
 		 	<Col s={10}>
-				<ContenedorComentarios/>
+
 				<Tarjeta s={12}/>
 				<Col s={6}>
-				jdsjkdn
+				<Publicaciones/>
 				</Col>
 				<Col s={6}>
 				sdgasty
