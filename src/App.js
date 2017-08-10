@@ -7,6 +7,7 @@ import About from './contenedores/About.jsx';
 import Vista from './contenedores/Vista.jsx';
 import Formulario from './contenedores/Formulario.jsx';
 import Nav from './contenedores/Navegador.js';
+import TarjetaPublicacion from './contenedores/TarjetaPublicacion.jsx';
 import Detalle from './contenedores/Detalle.js';
 
 
@@ -31,6 +32,9 @@ class App extends Component {
                  <Link to="/detalle">Detalle</Link>
 
               <li>
+                <Link to="/tarjetaPublicacion">Publicacion</Link>
+              </li>
+              <li>
                 <Link to="/formulario">Formulario</Link>
 
               </li>
@@ -41,6 +45,7 @@ class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/vista" component={Vista}/>
+            <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
 			      <Route path="/detalle" component={Detalle}/>
             <Route path="/formulario" component={Formulario}/>
 
