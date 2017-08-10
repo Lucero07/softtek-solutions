@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, Tag, Card, Collection, CollectionItem, Icon, Collapsible, CollapsibleItem, Row, Col } from 'react-materialize';
+import { Button, Tag, Chip, Card, Collection, CollectionItem, Icon, Collapsible, CollapsibleItem, Row, Col, Badge } from 'react-materialize';
 import '../TarjetaPublicacion.css';
+import ModalReto from './ModalReto.jsx'; 
 
 export default class CardPublicacion extends React.Component{
     render(){
@@ -21,26 +22,25 @@ export default class CardPublicacion extends React.Component{
                         <CollectionItem href='#'>Reto 3</CollectionItem>
                     </Collection>
                     <Col m={6}>
+                        <ModalReto className="botonReto"/>
+                    </Col>
+                    <Col m={5}>
                         <Button className="botonReto">
-                            +Reto
+                            <i className="material-icons">&#xE0BF;</i>
                         </Button>
                     </Col>
-                    <Col m={4}>
-                        <Button>
-                            <i className="material-icons">&#xE8DC;</i>
-                        </Button>
-                    </Col>
-                    <Col m={10}>
-                        <Collapsible popout>
-                            <CollapsibleItem header='Comentar' icon='filter_drama'>
-                                Comentar
-                            </CollapsibleItem>
-                        </Collapsible>
+                    <Col m={3}>
+                        <div className="centrarElementos">
+                            <i className="material-icons">&#xE8DC;</i><span>12</span>
+                            
+                        </div>
                     </Col>
                     <Col m={12}>
-                        <Tag>tag</Tag>
-                        <Tag>tag</Tag>
-                        <Tag>tag</Tag>
+                        <div className="margenTop">
+                            <Tag>tag</Tag>
+                            <Tag>tag</Tag>
+                            <Tag>tag</Tag>
+                        </div>
                     </Col>
                 </Row>
             </Card>
