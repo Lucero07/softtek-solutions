@@ -6,7 +6,7 @@ export default class Comentarios extends Component {
   		super(props);
   	}
   	render(){
-  		const nombre = this.props.nombre;
+  		const name = this.props.name;
   		const status = this.props.status;
   		return(
   			<div>
@@ -15,7 +15,7 @@ export default class Comentarios extends Component {
   					(status === 'done')?
   					<input type='checkbox' checked disabled/> :
   					<input type='checkbox'/>}
-  				<label>{nombre}</label>
+  				<label>{name}</label>
   			</div>
   		)
   	}
