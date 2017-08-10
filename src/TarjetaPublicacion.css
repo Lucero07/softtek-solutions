@@ -1,3 +1,15 @@
 .botonReto {
     margin-bottom: 3%;
 }
+
+.bordeColor {
+    border: solid 2px #4C0E00;
+    width: 100%;
+    text-align: center;
+}
+.margenTop {
+    margin-top: 20%;
+}
+.centrarElementos{
+    margin-top: 30%;
+}
