@@ -1,5 +1,6 @@
 .botonReto {
     margin-bottom: 3%;
+    background-color: #A10051;
 }
 
 .bordeColor {
@@ -13,3 +14,9 @@
 .centrarElementos{
     margin-top: 30%;
 }
+
+
+.comment-space {
+  margin-bottom: 35%;
+}
+
