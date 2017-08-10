@@ -14,7 +14,7 @@ export default class Nav extends Component {
         <nav className='nav--height'>
           <Row className="nav-wrapper background--vino">
             <Col m={2} s={2}>
-              <Link className='brand-logo ' to="/"><img className='img-logo' src={logo} alt=""/></Link>
+              <Link className='brand-logo ' to="/home"><img className='img-logo' src={logo} alt=""/></Link>
             </Col>
             <Col s={1} offset='s3'>
               <i className='material-icons search'>search</i>
@@ -31,7 +31,7 @@ export default class Nav extends Component {
             </Col>
           </Row>
         </nav>
-        <Route exact path="/" component={Home}/>
+        <Route  path="/home" component={Home}/>
       </div>
     )
   }
