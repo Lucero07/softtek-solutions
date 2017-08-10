@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Modal, Chip, Card, Icon, Row, Col, Input } from 'react-materialize';
 import '../TarjetaPublicacion.css';
 
-export default class ModalReto extends React.Component{
+export default class FormularioReto extends React.Component{
     render(){
         return(
             <div>
