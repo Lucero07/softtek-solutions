@@ -3,7 +3,7 @@ import Home from './Home.jsx';
 import {Link, Route} from 'react-router-dom';
 import {Row, Col} from 'react-materialize';
 import '../Home.css';
-import logo from '../assets/img/softtek.png';
+import logo from '../assets/img/logo.png';
 import BotonModal from '../componentes/BotonModal.js'
 
 export default class Nav extends Component {
@@ -12,7 +12,7 @@ export default class Nav extends Component {
     return (
       <div>
         <nav className='nav--height'>
-          <Row className="nav-wrapper background--vino">
+          <Row className="nav-wrapper background--negro">
             <Col m={2} s={2}>
               <Link className='brand-logo ' to="/home"><img className='img-logo' src={logo} alt=""/></Link>
             </Col>

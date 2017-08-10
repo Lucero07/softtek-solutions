@@ -1,19 +1,33 @@
 .footer{
-    background-color: #4C0E00;
-    color: #E8C9D3;
+    background-color: rgba(28, 31, 30, 0.88);
+    color: #fff;
     letter-spacing: 3px;
+    padding-bottom: 2%;
 }
 
 .footer i{
+    font-size: 30px;
     margin-left: 2%;
     margin-top: 2%;
     padding: 1%;
-    border-radius: 50%;
-    background-color: #E8C9D3;
-    color: #5F7718;
+    border-radius: 100%;
+    background-color: #28C67D;
+    color: #fff;
+}
+
+.btn {
+  margin:5% 0 0 8%;
+}
+
+.btn-logo {
+  margin-top: 5%;
+}
+
+.mt {
+  margin-top: 5%;
 }
 
 .logo{
-    
-    width: 2.5%;
+    margin-top: 15%;
+    width: 70%;
 }
