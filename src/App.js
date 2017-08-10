@@ -40,15 +40,13 @@ class App extends Component {
             </ul>
 
             <hr/>
-        
-
-
 
             <Route exact path="/" component={Login}/>
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
             <Route path="/detalle" component={Detalle}/>
         <Footer/>
+
         </div>
     );
   }
