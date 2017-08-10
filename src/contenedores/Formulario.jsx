@@ -9,25 +9,19 @@ export default class Formulario extends Component {
             <Col s={2}/>
             <Col s={8}>
                 <Col s={12}>
-                    <Col s={2}/>
-                    <Input s={4} label="Usuario" />
-                    <Input s={3} name='group1' type='checkbox' value='red' label='Idea' />
-                    <Input s={3} name='group1' type='checkbox' value='red' label='Necesidad' />
+                    <Input label="Usuario" />
+                    <Input name='group1' type='radio' value='red' label='Idea' />
+                    <Input name='group1' type='radio' value='red' label='Necesidad' />
                 </Col>
                 <Col s={12}>
-                    <Col s={3}/>
-                    <Col s={6}>
-                        <textarea placeholder = "Escribir comentario" labe = "Comentario"></textarea>
-                    </Col>
+                    <textarea placeholder = "Escribir comentario" labe = "Comentario"></textarea>
                 </Col>
                 <Col s={12}>
-                    <Col s={3}/>
-                    <Col s={6}>
-                        <textarea placeholder = "Escribir tags" labe = "Tags"></textarea>
-                    </Col>
+                    <textarea placeholder = "Escribir tags" labe = "Tags"></textarea>
                 </Col>
-                <Col s={8}/>
-                <Button s={2}  waves='light'>Publicar</Button>
+                <Col s={12}>
+                    <Button s={2}  className="right" waves='light'>Publicar</Button>
+                </Col>
             </Col>
         </Row>
 
