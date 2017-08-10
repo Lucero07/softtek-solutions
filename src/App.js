@@ -18,9 +18,6 @@ class App extends Component {
     return ( 
         <div className=''>
             <ul>
-
-              <li>
-
                 <li>
                 <Link to="/Login">Login</Link>
                 </li>
