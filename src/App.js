@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import './App.css';
 import {Link, Route} from 'react-router-dom';
-import Home from './contenedores/Home.jsx';
 import About from './contenedores/About.jsx';
 import Vista from './contenedores/Vista.jsx';
 import Formulario from './contenedores/Formulario.jsx';
@@ -15,14 +14,12 @@ import Detalle from './contenedores/Detalle.js';
 
 class App extends Component {
   render() {
-    return ( 
+    return (
         <div className=''>
+          <Nav/>
             <ul>
                 <li>
                 <Link to="/Login">Login</Link>
-                </li>
-                <li>
-                <Link to="/">Home</Link>
                 </li>
                 <li>
                 <Link to="/about">About</Link>
@@ -45,7 +42,7 @@ class App extends Component {
 
 
 
-            <Route exact path="/" component={Home}/>
+
             <Route path="/Login" component={Login}/>
 
             <Route path="/about" component={About}/>
