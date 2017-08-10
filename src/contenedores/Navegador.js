@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Home from './Home.jsx';
-import Formulario from './Formulario.jsx';
 import {Link, Route} from 'react-router-dom';
 import {Button, Row, Col} from 'react-materialize';
 import '../Home.css';
-import logo from '../assets/img/logoSofttek.png';
+import logo from '../assets/img/softtek.png';
+import BotonModal from '../componentes/BotonModal.js'
 
 export default class Nav extends Component {
 
@@ -16,13 +16,15 @@ export default class Nav extends Component {
             <Col m={2} s={2}>
               <Link className='brand-logo ' to="/"><img className='img-logo' src={logo} alt=""/></Link>
             </Col>
-            <Col s={3} offset='s4'>
-                <input id="icon_prefix" type="text" className="border"/>
+            <Col s={1} offset='s3'>
+              <i className='material-icons search'>search</i>
+            </Col>
+            <Col s={3}>
+              <input id="icon_prefix" type="text"/>
             </Col>
             <Col s={2}>
-              <Button className='btn--verde'>
-                <Link to="/Formulario">publicacion</Link>
-              </Button>
+                <BotonModal/>
+
             </Col>
             <Col s={1}>
               <img className='foto-perfil responsive-img' src="https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt=""/>
@@ -30,7 +32,6 @@ export default class Nav extends Component {
           </Row>
         </nav>
         <Route exact path="/" component={Home}/>
-        <Route path="/Formulario" component={Formulario}/>
       </div>
     )
   }

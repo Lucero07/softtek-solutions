@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './index.css';
 import './App.css';
 import {Link, Route} from 'react-router-dom';
 import About from './contenedores/About.jsx';
