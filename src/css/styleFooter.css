@@ -1,0 +1,19 @@
+.footer{
+    background-color: #4C0E00;
+    color: #E8C9D3;
+    letter-spacing: 3px;
+}
+
+.footer i{
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #E8C9D3;
+    color: #5F7718;
+}
+
+.logo{
+    
+    width: 2.5%;
+}
