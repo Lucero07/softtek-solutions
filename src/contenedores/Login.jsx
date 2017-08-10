@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Col, Row, Button, Card, CardTitle} from "react-materialize";
+import "../Login.css"
 
 
 export default class Login extends Component{
@@ -8,15 +9,23 @@ export default class Login extends Component{
             <Row>
                 <Col s={3}/>
                    <Col s={6}>
-                       <Card className='small'	header={<CardTitle image='https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png'></CardTitle>}>	
-                       
-                           <Button href="#">Usuario Autorizado.</Button>
-                        </Card>                 
-                        <Card className='small'	header={<CardTitle image='https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png'></CardTitle>}>	
-                       
-                           <Button href="#">Usuario General.</Button>
-                        </Card>
+                        <div className="marginUser center">              
+                            <div className="center">
+                                <img className="imgUserHeight" src="https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt="#"/>
+                                                       
+                            </div>
                         
+                            <Button  href="#">Usuario Autorizado</Button> 
+                        </div>
+                        
+                        <div className="marginUser center">              
+                            <div className="center">
+                                <img className="imgUserHeight" src="https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt="#"/>
+                                                       
+                            </div>
+                        
+                            <Button href="#">Usuario General</Button> 
+                        </div>
                    </Col>
                 
                 
