@@ -28,7 +28,7 @@ class App extends Component {
                 <Link to="/about">About</Link>
                 </li>
                 <li>
-                <Link to="/vista">Topics</Link>
+                <Link to="/vista">FiltroTags</Link>
                 </li>
                 <li>
                  <Link to="/detalle">Detalle</Link>
@@ -41,14 +41,12 @@ class App extends Component {
 
             <hr/>
 
-
-
-
             <Route exact path="/" component={Login}/>
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
             <Route path="/detalle" component={Detalle}/>
-              <Footer/>
+        <Footer/>
+
         </div>
     );
   }
