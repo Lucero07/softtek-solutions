@@ -8,7 +8,7 @@ export default class FormularioReto extends React.Component{
             <div>
                 <Input m={12} label="Titulo Reto" />
                 <Input m={12} type="text" placeholder="Escribe tu reto" />
-                <Button type="submit">
+                <Button className="botonReto" type="submit">
                     Crear Reto
                 </Button>
             </div>
