@@ -7,40 +7,39 @@ export default class CardPublicacion extends React.Component{
     render(){
         return(
             <Card actions={[<a href='#'>Ver mas ...</a>]}>
-                <Row>
-                    <h5>Nombre Usuario</h5>
-                    <Col m={7}/>
-                    <Col m={5}>
+                <Row>    
+                    <h5>{this.props.usuario}</h5>
+                    <Col m={6}/>
+                    <Col m={6}>
                         <div className="bordeColor">Necesidad</div>
                     </Col>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga itaque facere neque ad est delectus explicabo, similique illum laborum ut quam enim asperiores excepturi perferendis dolorum dolores ea tenetur ipsam?
+                        {this.props.descripcion}
                     </div>
                     <Collection>
-                        <CollectionItem href='#'>Reto 1</CollectionItem>
-                        <CollectionItem href='#'>Reto 2</CollectionItem>
-                        <CollectionItem href='#'>Reto 3</CollectionItem>
+                        <CollectionItem href='#'>{this.props.reto1}</CollectionItem>
+                        <CollectionItem href='#'>{this.props.reto2}</CollectionItem>
+                        <CollectionItem href='#'>{this.props.reto3}</CollectionItem>
                     </Collection>
                     <Col m={6}>
-                        <ModalReto className="botonReto"/>
+                        <ModalReto nombreUsuario={this.props.usuario} />
                     </Col>
                     <Col m={5}>
                         <Button className="botonReto">
                             <i className="material-icons">&#xE0BF;</i>
                         </Button>
                     </Col>
-                    <Col m={3}>
+                    <Col m={4}>
                         <div className="centrarElementos">
-                            <i className="material-icons">&#xE8DC;</i><span>12</span>
-
+                            <i className="material-icons">&#xE8DC;</i><span>{this.props.likes}</span>
                         </div>
                     </Col>
                     <Col m={12}>
                         <div className="margenTop">
-                            <Chip>tag</Chip>
-                            <Chip>tag</Chip>
-                            <Chip>tag</Chip>
-                            <Chip>tag</Chip>
+                            <Chip>{this.props.tag1}</Chip>
+                            <Chip>{this.props.tag2}</Chip>
+                            <Chip>{this.props.tag3}</Chip>
+                            <Chip>{this.props.tag4}</Chip>
                         </div>
                     </Col>
                 </Row>
