@@ -22,7 +22,7 @@ export default class CardPublicacion extends React.Component{
                         <CollectionItem href='#'>Reto 3</CollectionItem>
                     </Collection>
                     <Col m={6}>
-                        <ModalReto className="botonReto"/>
+                        
                     </Col>
                     <Col m={5}>
                         <Button className="botonReto">
