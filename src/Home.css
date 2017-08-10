@@ -1,0 +1,14 @@
+.foto-perfil {
+  width: 60%;
+  border-radius: 100%;
+  margin-top: 10%;
+}
+.background--vino {
+  background-color: #4C0E00;
+}
+.btn--verde {
+  background-color: #C6D32E;
+}
+.padding-label {
+  padding: 3%;
+}
