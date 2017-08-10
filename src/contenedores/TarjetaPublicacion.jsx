@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Chips, Card, Collection, CollectionItem, Icon, Collapsible, CollapsibleItem, Row, Col } from 'react-materialize';
+import { Row, Col } from 'react-materialize';
 import '../TarjetaPublicacion.css';
 import CardPublicacion from '../componentes/CardPublicacion.jsx';
 

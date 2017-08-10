@@ -7,10 +7,9 @@ export default class ModalReto extends React.Component{
     render(){
         return(
             <Modal
-                header='Nuevo Reto'
-                trigger={<Button>Reto</Button>}>
+                trigger={<Button className="botonReto">Reto</Button>}>
                 <Row>
-                    <h5>Usuario</h5>
+                    <h5>{this.props.nombreUsuario}</h5>
 	                <FormularioReto />
                 </Row>
             </Modal>
