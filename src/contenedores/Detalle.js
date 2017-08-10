@@ -7,9 +7,8 @@ export default class Detalle extends Component {
   render() {
     return (
 		<Row>
-			<Col s={1}/>
+			<Col offset='s1'/>
 		 	<Col s={10}>
-
 				<Tarjeta s={12}/>
 				<Col s={6}>
 				<Publicaciones/>
@@ -17,7 +16,6 @@ export default class Detalle extends Component {
 				<Col s={6}>
 				sdgasty
 				</Col>
-
 			</Col>
 		</Row>
     )

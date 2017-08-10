@@ -1,0 +1,28 @@
+[debug] [2017-08-10T16:49:46.043Z] ----------------------------------------------------------------------
+[debug] [2017-08-10T16:49:46.046Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Koke_Code\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-08-10T16:49:46.046Z] CLI Version:   3.9.2
+[debug] [2017-08-10T16:49:46.046Z] Platform:      win32
+[debug] [2017-08-10T16:49:46.047Z] Node Version:  v6.11.1
+[debug] [2017-08-10T16:49:46.047Z] Time:          Thu Aug 10 2017 11:49:46 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2017-08-10T16:49:46.047Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-10T16:49:46.061Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-10T16:49:46.062Z] > authorizing via signed-in user
+[debug] [2017-08-10T16:49:46.064Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/softtek-solutions  
+ Thu Aug 10 2017 11:49:46 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2017-08-10T16:49:46.821Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-10T16:49:46.822Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/softtek-solutions/tokens  
+ Thu Aug 10 2017 11:49:46 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2017-08-10T16:49:47.205Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Koke_Code\Documents\laboratoria\mock-hackathon\softtek-solutions'...
+[info] 
+[debug] [2017-08-10T16:49:47.209Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/softtek-solutions  
+ Thu Aug 10 2017 11:49:47 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2017-08-10T16:49:48.360Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-10T16:49:48.361Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1006828872754/clients/_:getWebAppConfig  
+ Thu Aug 10 2017 11:49:48 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2017-08-10T16:49:49.135Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000
+

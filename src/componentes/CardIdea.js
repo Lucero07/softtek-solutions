@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {Button, Chip, Card, Row, Col} from 'react-materialize';
 import '../TarjetaPublicacion.css';
+import {Link} from 'react-router-dom';
 
 export default class CardIdea extends Component {
   render() {
     return (
-      <Card actions={[< a href = '#' > Ver mas ...</a>]}>
+      <Card actions={[<a href = '#' > Ver mas ...</a>]}>
         <Row>
           <h5>{this.props.nombreUsuario}</h5>
           <Col m={7}/>
@@ -30,9 +31,9 @@ export default class CardIdea extends Component {
           </Col>
           <Col m={12}>
             <div className="margenTop">
-              <Chip>{this.props.tag1}</Chip>
-              <Chip>{this.props.tag2}</Chip>
-              <Chip>{this.props.tag3}</Chip>
+              <Link to='/vista'><Chip href='../Vista'>{this.props.tag1}</Chip></Link>
+              <Link to='/vista'><Chip href='../Vista'>{this.props.tag2}</Chip></Link>
+              <Link to='/vista'><Chip href='../Vista'>{this.props.tag3}</Chip></Link>
             </div>
           </Col>
         </Row>

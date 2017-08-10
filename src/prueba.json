@@ -1,0 +1,34 @@
+{
+	post:[{
+		countent:props1,
+		like: props1,
+		comentario:[
+			{
+		autor: name,
+		contenido:comentario,
+			},
+			{
+			autor: Luzz,
+			contenido:comentario1,
+				}],
+		retos:[
+			{
+				titulo:reto1,
+				contenido:inf del reto,
+			}
+		]
+		},
+		{
+			countent:props1,
+			like: props1
+			},
+			{
+				countent:props1,
+				like: props1
+				}
+
+		]
+},
+{
+
+}

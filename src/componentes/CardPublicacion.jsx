@@ -2,12 +2,13 @@ import React from 'react';
 import { Button,Chip, Card, Collection, CollectionItem, Row, Col,} from 'react-materialize';
 import '../TarjetaPublicacion.css';
 import ModalReto from './ModalReto.jsx';
+import {Link} from 'react-router-dom';
 
 export default class CardPublicacion extends React.Component{
     render(){
         return(
-            <Card actions={[<a href='#'>Ver mas ...</a>]}>
-                <Row>    
+            <Card actions={[<Link to='/detalle'><a href='../Detalle'>Ver mas ...</a></Link>]}>
+                <Row>
                     <h5>{this.props.usuario}</h5>
                     <Col m={6}/>
                     <Col m={6}>
@@ -17,9 +18,9 @@ export default class CardPublicacion extends React.Component{
                         {this.props.descripcion}
                     </div>
                     <Collection>
-                        <CollectionItem href='#'>{this.props.reto1}</CollectionItem>
-                        <CollectionItem href='#'>{this.props.reto2}</CollectionItem>
-                        <CollectionItem href='#'>{this.props.reto3}</CollectionItem>
+                        <Link to='/detalle'><CollectionItem href='../Detalle'>{this.props.reto1}</CollectionItem></Link>
+                        <Link to='/detalle'><CollectionItem href='../Detalle'>{this.props.reto2}</CollectionItem></Link>
+                        <Link to='/detalle'><CollectionItem href='../Detalle'>{this.props.reto3}</CollectionItem></Link>
                     </Collection>
                     <Col m={6}>
 
@@ -38,10 +39,10 @@ export default class CardPublicacion extends React.Component{
                     </Col>
                     <Col m={12}>
                         <div className="margenTop">
-                            <Chip>{this.props.tag1}</Chip>
-                            <Chip>{this.props.tag2}</Chip>
-                            <Chip>{this.props.tag3}</Chip>
-                            <Chip>{this.props.tag4}</Chip>
+                            <Link to='/vista'><Chip href='../Vista'>{this.props.tag1}</Chip></Link>
+                            <Link to='/vista'><Chip href='../Vista'>{this.props.tag2}</Chip></Link>
+                            <Link to='/vista'><Chip href='../Vista'>{this.props.tag3}</Chip></Link>
+                            <Link to='/vista'><Chip href='../Vista'>{this.props.tag4}</Chip></Link>
                         </div>
                     </Col>
                 </Row>

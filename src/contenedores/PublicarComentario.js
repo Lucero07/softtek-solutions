@@ -24,6 +24,7 @@ class Publicaciones extends Component {
 
 	const app= firebase.initializeApp(config);
 	this.database = app.database();
+	console.log(this.database);
 
 const comentariosBaseDatos = this.database.ref('listaFinal');
 	comentariosBaseDatos.on('value',(respuesta)=> {
