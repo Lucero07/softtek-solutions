@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Col, Row, Button, Input, Card} from 'react-materialize';
+import {Col, Row, Button, Input} from 'react-materialize';
 
 export default class Formulario extends Component {
   render() {
@@ -30,7 +30,7 @@ export default class Formulario extends Component {
                 <Button s={2}  waves='light'>Publicar</Button>
             </Col>
         </Row>
-        
+
     )
   }
 }

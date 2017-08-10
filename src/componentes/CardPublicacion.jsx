@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Tag, Chip, Card, Collection, CollectionItem, Icon, Collapsible, CollapsibleItem, Row, Col, Badge } from 'react-materialize';
+import { Button,Chip, Card, Collection, CollectionItem, Row, Col,} from 'react-materialize';
 import '../TarjetaPublicacion.css';
-import ModalReto from './ModalReto.jsx'; 
+import ModalReto from './ModalReto.jsx';
 
 export default class CardPublicacion extends React.Component{
     render(){
@@ -32,7 +32,7 @@ export default class CardPublicacion extends React.Component{
                     <Col m={3}>
                         <div className="centrarElementos">
                             <i className="material-icons">&#xE8DC;</i><span>12</span>
-                            
+
                         </div>
                     </Col>
                     <Col m={12}>
