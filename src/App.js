@@ -16,33 +16,29 @@ import Detalle from './contenedores/Detalle.js';
 class App extends Component {
   render() {
     return ( 
-      <div className=''>
-        <div>
-          <div>
+        <div className=''>
             <ul>
-              <li>
-               <Link to="/Login">Login</Link>
-              </li>
-              <li>
+                <li>
+                <Link to="/Login">Login</Link>
+                </li>
+                <li>
                 <Link to="/">Home</Link>
-              </li>
-              <li>
+                </li>
+                <li>
                 <Link to="/about">About</Link>
-              </li>
-              <li>
+                </li>
+                <li>
                 <Link to="/vista">Topics</Link>
-              </li>
-
-			        <li>
+                </li>
+                <li>
                  <Link to="/detalle">Detalle</Link>
-
-              <li>
+                </li>
+                <li>
                 <Link to="/tarjetaPublicacion">Publicacion</Link>
-              </li>
-              <li>
+                </li>
+                <li>
                 <Link to="/formulario">Formulario</Link>
-
-              </li>
+                </li>
             </ul>
 
             <hr/>
@@ -52,11 +48,9 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
-			      <Route path="/detalle" component={Detalle}/>
+            <Route path="/detalle" component={Detalle}/>
             <Route path="/formulario" component={Formulario}/>
-
-          </div>
-
+        </div>
     );
   }
 }
