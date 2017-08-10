@@ -9,7 +9,7 @@ export default class Detalle extends Component {
 		<Row>
 			<Col s={1}/>
 		 	<Col s={10}>
-<Publicaciones/>
+
 				<Tarjeta s={12}/>
 				<Col s={6}>
 				<Publicaciones/>

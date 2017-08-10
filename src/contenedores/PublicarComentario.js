@@ -7,7 +7,7 @@ class Publicaciones extends Component {
 	constructor(props){
 		super(props);
 		this.state={
-			listaActual:[]
+			listaactual:[]
 		};
 	}
 
@@ -26,18 +26,18 @@ class Publicaciones extends Component {
 	this.database = app.database();
 
 const comentariosBaseDatos = this.database.ref('listaFinal');
-	//lee la base de datos ,
-	comentariosBaseDatos.on('value',(snapshot)=> {
-		const listaFinal = snapshot.val();
-		this.setState({
-			listafinal:listaFinal
+	comentariosBaseDatos.on('value',(respuesta)=> {
 
+	const listaComent = respuesta.val();
+			console.log(listaComent);
+		this.setState({
+			listaactual:listaComent.comentarios
 		})
 
 	});
 	}
 
-	savePlayList(comentarios){
+	guardarLista(comentarios){
 		const comentariosBaseDatos = this.database.ref('listaFinal');
 	//escribe en la base de datos
 		comentariosBaseDatos.set({
@@ -47,16 +47,16 @@ const comentariosBaseDatos = this.database.ref('listaFinal');
 
 
 	agregarComentario = (comentario)=>{
-		let listaComentario = this.state.listaActual;
-		listaComentario.push(comentario);
+		let listaComentario = this.state.listaactual;
+		listaComentario.unshift(comentario);
 		this.setState({
-			listaActual:listaComentario
+			listaactual:listaComentario
 		});
-		this.savePlayList(listaComentario);
+		this.guardarLista(listaComentario);
 	}
 
   render() {
-	  const comentarios = this.state.listaActual;
+	  const comentarios = this.state.listaactual;
     return (
       <div>
 	  	<h1>Publicaciones</h1>
