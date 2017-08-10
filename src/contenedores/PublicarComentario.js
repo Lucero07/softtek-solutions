@@ -1,40 +1,70 @@
 import React,{Component} from 'react';
+import firebase from 'firebase';
 import FormularioComentario from '../componentes/FormularioComentarios';
 import ListaComentarios from '../componentes/ListaComentario';
 
-class PublicarComentarios extends Component{
-
+class Publicaciones extends Component {
 	constructor(props){
 		super(props);
-		this.state = {
-			comentarios:[]
+		this.state={
+			listaActual:[]
 		};
-		this.onSubmitHandler = this.onSubmitHandler.bind(this);
 	}
 
-	onSubmitHandler(e){
-		e.preventDefault();
-		const name =e.target.children[0].value;
-		const status = 'pending';
-		const comentario = {name,status};
-		let comentarios = this.state.comentarios;
-		comentarios.push(comentario);
+	componentDidMount(){
+		const config = {
+	      apiKey: "AIzaSyC06RbfBZIekb0-HCZU6QY-fjJElxOO-Uo",
+	      authDomain: "softtek-solutions.firebaseapp.com",
+	      databaseURL: "https://softtek-solutions.firebaseio.com",
+	      projectId: "softtek-solutions",
+	      storageBucket: "",
+	      messagingSenderId: "1006828872754"
+	    };
 
-console.log(comentarios);
+
+	const app= firebase.initializeApp(config);
+	this.database = app.database();
+
+const comentariosBaseDatos = this.database.ref('listaFinal');
+	//lee la base de datos ,
+	comentariosBaseDatos.on('value',(snapshot)=> {
+		const listaFinal = snapshot.val();
 		this.setState({
-			comentarios
+			listafinal:listaFinal
+
+		})
+
+	});
+	}
+
+	savePlayList(comentarios){
+		const comentariosBaseDatos = this.database.ref('listaFinal');
+	//escribe en la base de datos
+		comentariosBaseDatos.set({
+			comentarios:comentarios
 		});
 	}
 
-	render(){
-		return(
-			<div>
-				<h1>Lista de comentarios</h1>
-				<FormularioComentario onSubmitHandler={this.onSubmitHandler} />
-				<ListaComentarios comentarios ={this.state.comentarios} />
-			</div>
-		);
+
+	agregarComentario = (comentario)=>{
+		let listaComentario = this.state.listaActual;
+		listaComentario.push(comentario);
+		this.setState({
+			listaActual:listaComentario
+		});
+		this.savePlayList(listaComentario);
 	}
+
+  render() {
+	  const comentarios = this.state.listaActual;
+    return (
+      <div>
+	  	<h1>Publicaciones</h1>
+		<FormularioComentario agregarComentario={this.agregarComentario}/>
+		<ListaComentarios comentarios = {comentarios}/>
+      </div>
+    );
+  }
 }
 
-export default PublicarComentarios;
+export default Publicaciones;
