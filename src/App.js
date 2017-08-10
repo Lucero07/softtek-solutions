@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return ( 
         <div className=''>
-          <Nav/>
+          <Nav />
             <ul>
                 <li>
                 <Link to="/Login">Login</Link>
