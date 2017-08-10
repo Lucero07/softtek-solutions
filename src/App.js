@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import BasicExample from './contenedores/prueba.js'
 import {Link, Route} from 'react-router-dom';
 import Home from './contenedores/Home.jsx';
 import About from './contenedores/About.jsx';
@@ -17,9 +15,6 @@ class App extends Component {
           <div>
             <ul>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
                 <Link to="/about">About</Link>
               </li>
               <li>
@@ -29,7 +24,6 @@ class App extends Component {
 
             <hr/>
 
-            <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/vista" component={Vista}/>
           </div>
