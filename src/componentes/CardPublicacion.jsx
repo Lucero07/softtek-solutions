@@ -1,13 +1,17 @@
 import React from 'react';
-import { Button, Chips, Card, Collection, CollectionItem, Icon, Collapsible, CollapsibleItem, Row, Col } from 'react-materialize';
+import { Button, Tag, Card, Collection, CollectionItem, Icon, Collapsible, CollapsibleItem, Row, Col } from 'react-materialize';
 import '../TarjetaPublicacion.css';
 
 export default class CardPublicacion extends React.Component{
     render(){
         return(
-            <Card title='Tarjeta Publicacion' actions={[<a href='#'>Ver mas ...</a>]}>
+            <Card actions={[<a href='#'>Ver mas ...</a>]}>
                 <Row>
                     <h5>Nombre Usuario</h5>
+                    <Col m={7}/>
+                    <Col m={5}>
+                        <div className="bordeColor">Necesidad</div>
+                    </Col>
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga itaque facere neque ad est delectus explicabo, similique illum laborum ut quam enim asperiores excepturi perferendis dolorum dolores ea tenetur ipsam?
                     </div>
@@ -28,10 +32,15 @@ export default class CardPublicacion extends React.Component{
                     </Col>
                     <Col m={10}>
                         <Collapsible popout>
-                            <CollapsibleItem header='First' icon='filter_drama'>
+                            <CollapsibleItem header='Comentar' icon='filter_drama'>
                                 Comentar
                             </CollapsibleItem>
                         </Collapsible>
+                    </Col>
+                    <Col m={12}>
+                        <Tag>tag</Tag>
+                        <Tag>tag</Tag>
+                        <Tag>tag</Tag>
                     </Col>
                 </Row>
             </Card>
