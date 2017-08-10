@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Chip, Card, Icon, Row, Col } from 'react-materialize';
+import { Button, Modal,Row } from 'react-materialize';
 import '../TarjetaPublicacion.css';
 import FormularioReto from './FormularioReto.jsx';
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Home from './Home.jsx';
 import {Link, Route} from 'react-router-dom';
-import {Button, Row, Col} from 'react-materialize';
+import {Row, Col} from 'react-materialize';
 import '../Home.css';
 import logo from '../assets/img/softtek.png';
 import BotonModal from '../componentes/BotonModal.js'
