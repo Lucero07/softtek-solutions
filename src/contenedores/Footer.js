@@ -27,6 +27,7 @@ export default class Footer extends Component {
           </Col>
         </Row>
         <br/>
+        <hr/>
         <footer className='mt'>
           <Row>
             <Col s={12}>
