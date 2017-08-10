@@ -9,8 +9,8 @@ export default class CardPublicacion extends React.Component{
             <Card actions={[<a href='#'>Ver mas ...</a>]}>
                 <Row>    
                     <h5>{this.props.usuario}</h5>
-                    <Col m={6}/>
-                    <Col m={6}>
+                    <Col m={5}/>
+                    <Col m={7}>
                         <div className="bordeColor">Necesidad</div>
                     </Col>
                     <div>
@@ -22,9 +22,7 @@ export default class CardPublicacion extends React.Component{
                         <CollectionItem href='#'>{this.props.reto3}</CollectionItem>
                     </Collection>
                     <Col m={6}>
-
-                        <ModalReto nombreUsuario={this.props.usuario} />
-
+                        <ModalReto nombreUsuario={"Melisa Rios"} />
                     </Col>
                     <Col m={5}>
                         <Button className="botonReto">
