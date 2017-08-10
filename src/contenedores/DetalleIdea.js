@@ -1,22 +1,21 @@
 import React, {Component} from 'react';
-import {Row,Col} from 'react-materialize'
-import Tarjeta from '../componentes/Tarjeta.js';
-import Publicaciones from './PublicarComentario';
+import {Row, Col} from 'react-materialize';
+import CardIdea from '../componentes/CardIdea.js';
 import Grafica from '../assets/img/grafica.svg';
 import Likes from '../assets/img/likeUbicacion.svg';
 import Mapa from '../assets/img/mapa.svg';
+import Publicaciones from './PublicarComentario';
 import '../index.css';
 
-export default class Detalle extends Component {
+export default class DetalleIdea extends Component {
   render() {
     return (
-		<Row>
-			<Col offset='s1'/>
-		 	<Col s={10}>
-				<Tarjeta s={12}/>
-				<Col s={6}>
-				<Publicaciones/>
-				</Col>
+
+      <Row >
+        <Col m={5} offset="m1" s={12}>
+          <CardIdea nombreUsuario='CodeCademy' comentario='No olviden visitar nustra pagina y sigan aprendiendo con nuestros cursos en linea.' tag1='CursosOnline' tag2='CodeCademy' tag3='latam' likes='45'/>
+          <Publicaciones/>
+        </Col>
 
         <Col m={4} offset='m1'  s={12} className='mt'>
           <div className='borde'>
@@ -31,10 +30,7 @@ export default class Detalle extends Component {
             <img src={Mapa} alt="mapa"/>
           </div>
         </Col>
-
-
-			</Col>
-		</Row>
+      </Row>
     )
   }
 }

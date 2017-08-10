@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Modal,Row } from 'react-materialize';
 import '../TarjetaPublicacion.css';
 import FormularioReto from './FormularioReto.jsx';
+import firebase from 'firebase';
 
 export default class ModalReto extends React.Component{
     render(){

@@ -8,6 +8,7 @@ import Nav from './contenedores/Navegador.js';
 import Login from './contenedores/Login.jsx';
 import TarjetaPublicacion from './contenedores/TarjetaPublicacion.jsx';
 import Detalle from './contenedores/Detalle.js';
+import DetalleIdea from './contenedores/DetalleIdea.js';
 
 
 
@@ -15,40 +16,17 @@ import Detalle from './contenedores/Detalle.js';
 class App extends Component {
   render() {
     return (
-        <div className=''>
+        <div >
 
           <Nav/>
-
-            <ul>
-
-                <li>
-                <Link to="/">Login</Link>
-                </li>
-                <li>
-                <Link to="/about">About</Link>
-                </li>
-                <li>
-                <Link to="/vista">Topics</Link>
-                </li>
-                <li>
-                 <Link to="/detalle">Detalle</Link>
-                </li>
-                <li>
-                <Link to="/tarjetaPublicacion">Publicacion</Link>
-                </li>
-
-            </ul>
-
-            <hr/>
-
-
 
 
             <Route exact path="/" component={Login}/>
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
             <Route path="/detalle" component={Detalle}/>
-              <Footer/>
+        <Footer/>
+
         </div>
     );
   }

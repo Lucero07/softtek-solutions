@@ -24,7 +24,6 @@ export default class Nav extends Component {
             </Col>
             <Col s={2}>
                 <BotonModal/>
-
             </Col>
             <Col s={1}>
               <img className='foto-perfil responsive-img' src="https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt=""/>
