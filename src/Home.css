@@ -10,14 +10,14 @@
   background-color: #E8C9D3;
 }
 .btn--verde {
-  background-color: #C6D32E;
+  background-color: #28C67D;
 }
 .padding-label {
   padding: 5%;
 }
 
 .img-logo {
-  width: 48%;
+  width: 35%;
 }
 
 .nav--height {
@@ -26,7 +26,7 @@
 
 
 
-.margin-row {
+.mt {
   margin-top: 2%;
 }
 
@@ -40,4 +40,12 @@
 
 .background-verde {
   background-color: rgba(7, 189, 18, 0.28);
+}
+
+.background-azul {
+  background-color: rgba(71, 140, 242, 0.38);
+}
+
+.background-morado {
+  background-color: rgba(110, 23, 209, 0.38);
 }
