@@ -40,7 +40,7 @@ class App extends Component {
             </ul>
 
             <hr/>
-        <Footer/>
+
 
 
 
@@ -48,6 +48,7 @@ class App extends Component {
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
             <Route path="/detalle" component={Detalle}/>
+              <Footer/>
         </div>
     );
   }
