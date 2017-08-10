@@ -6,15 +6,17 @@ import {Link, Route} from 'react-router-dom';
 import Home from './contenedores/Home.jsx';
 import About from './contenedores/About.jsx';
 import Vista from './contenedores/Vista.jsx';
+import Formulario from './contenedores/Formulario.jsx';
 import Nav from './contenedores/Navegador.js';
 import TarjetaPublicacion from './contenedores/TarjetaPublicacion.jsx';
+
 
 
 class App extends Component {
   render() {
     return (
       <div className=''>
-          <Nav/>
+          
         <div>
           <div>
             <ul>
@@ -30,6 +32,9 @@ class App extends Component {
               <li>
                 <Link to="/tarjetaPublicacion">Publicacion</Link>
               </li>
+              <li>
+                <Link to="/formulario">Formulario</Link>
+              </li>
             </ul>
 
             <hr/>
@@ -38,6 +43,7 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Route path="/vista" component={Vista}/>
             <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
+            <Route path="/formulario" component={Formulario}/>
           </div>
         </div>
       </div>
