@@ -9,8 +9,8 @@ export default class CardPublicacion extends React.Component{
             <Card actions={[<a href='#'>Ver mas ...</a>]}>
                 <Row>    
                     <h5>{this.props.usuario}</h5>
-                    <Col m={6}/>
-                    <Col m={6}>
+                    <Col m={5}/>
+                    <Col m={7}>
                         <div className="bordeColor">Necesidad</div>
                     </Col>
                     <div>

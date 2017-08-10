@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Col, Row, Button, Input} from 'react-materialize';
 
 export default class Formulario extends Component {
+    
   render() {
     return (
         <Row className="formularioPublicacion">
