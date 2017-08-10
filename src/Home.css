@@ -3,8 +3,8 @@
   border-radius: 100%;
   margin-top: 10%;
 }
-.background--vino {
-  background-color: rgba(28, 31, 30, 0.58);
+.background--negro {
+  background-color: rgba(28, 31, 30, 0.88);
 }
 .background--rosaObscuro {
   background-color: #E8C9D3;
@@ -32,4 +32,12 @@
 
 .search {
   margin-left: 80%;
+}
+
+.background-rojo {
+  background-color: rgba(215, 33, 22, 0.31);
+}
+
+.background-verde {
+  background-color: rgba(7, 189, 18, 0.28);
 }

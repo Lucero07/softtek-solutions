@@ -12,7 +12,7 @@ export default class Nav extends Component {
     return (
       <div>
         <nav className='nav--height'>
-          <Row className="nav-wrapper background--vino">
+          <Row className="nav-wrapper background--negro">
             <Col m={2} s={2}>
               <Link className='brand-logo ' to="/home"><img className='img-logo' src={logo} alt=""/></Link>
             </Col>
