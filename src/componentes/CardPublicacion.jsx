@@ -22,7 +22,7 @@ export default class CardPublicacion extends React.Component{
                         <CollectionItem href='#'>{this.props.reto3}</CollectionItem>
                     </Collection>
                     <Col m={6}>
-                        <ModalReto nombreUsuario={this.props.usuario} />
+                        <ModalReto nombreUsuario={"Melisa Rios"} />
                     </Col>
                     <Col m={5}>
                         <Button className="botonReto">
