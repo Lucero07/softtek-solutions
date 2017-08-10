@@ -6,6 +6,7 @@ import Likes from '../assets/img/likeUbicacion.svg';
 import Mapa from '../assets/img/mapa.svg';
 import Publicaciones from './PublicarComentario';
 import '../index.css';
+import {Link} from 'react-router-dom';
 
 export default class DetalleIdea extends Component {
   render() {

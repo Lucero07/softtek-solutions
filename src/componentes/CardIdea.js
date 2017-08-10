@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export default class CardIdea extends Component {
   render() {
     return (
-      <Card actions={[<a href = '#' > Ver mas ...</a>]}>
+      <Card actions={[<Link to='/detalleIdea'><a href ='../contenedores/DetalleIdea' > Ver mas ...</a></Link>]}>
         <Row>
           <h5>{this.props.nombreUsuario}</h5>
           <Col m={7}/>
