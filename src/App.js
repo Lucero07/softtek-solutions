@@ -7,6 +7,8 @@ import Home from './contenedores/Home.jsx';
 import About from './contenedores/About.jsx';
 import Vista from './contenedores/Vista.jsx';
 import Nav from './contenedores/Navegador.js';
+import TarjetaPublicacion from './contenedores/TarjetaPublicacion.jsx';
+
 
 class App extends Component {
   render() {
@@ -25,6 +27,9 @@ class App extends Component {
               <li>
                 <Link to="/vista">Topics</Link>
               </li>
+              <li>
+                <Link to="/tarjetaPublicacion">Publicacion</Link>
+              </li>
             </ul>
 
             <hr/>
@@ -32,6 +37,7 @@ class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/vista" component={Vista}/>
+            <Route path="/tarjetaPublicacion" component={TarjetaPublicacion}/>
           </div>
         </div>
       </div>
