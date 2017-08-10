@@ -8,7 +8,6 @@ export default class BotonModal extends Component {
       <Modal
           trigger={<Button className= 'btn--verde'> Publicar</Button>}>
           <Row>
-
             <Formulario />
           </Row>
       </Modal>
